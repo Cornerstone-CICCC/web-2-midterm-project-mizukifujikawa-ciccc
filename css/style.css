@@ -73,6 +73,7 @@ body .contents .row .card:hover {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
+  z-index: 11;
 }
 .overlay .modal {
   margin: 0 auto;
@@ -86,6 +87,7 @@ body .contents .row .card:hover {
   transform: translate(-50%, -50%);
   border-radius: 10px;
   box-shadow: 0 0 8px gray;
+  z-index: 12;
 }
 .overlay .modal .modal-inner {
   width: 100%;
