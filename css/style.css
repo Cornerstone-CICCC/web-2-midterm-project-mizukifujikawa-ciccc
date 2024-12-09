@@ -1,0 +1,134 @@
+body {
+  overflow-x: hidden;
+  margin: 20px 0;
+  padding: 0 10%;
+}
+body .navbar .navbar-brand {
+  font-size: 2em;
+}
+body .navbar .navbar-toggler {
+  border-color: rgba(0, 0, 0, 0);
+}
+body .navbar .navbar-nav button {
+  margin: 0;
+}
+body .carousel {
+  position: relative;
+}
+body .carousel .carousel-inner .carousel-item {
+  border-radius: 20px;
+}
+body .carousel .carousel-inner .carousel-item img {
+  border-radius: 20px;
+}
+body .carousel .carousel-inner .carousel-item .carousel-caption {
+  color: #D9D9D9 !important;
+  z-index: 10;
+}
+body .carousel .shadow {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 100%;
+  left: 0%;
+  transform: translate(0%, -99%);
+  background: linear-gradient(rgba(255, 255, 255, 0) 0, #000 80%);
+}
+body .contents {
+  margin: 2em 0;
+}
+body .contents h3 {
+  font-size: 1em;
+}
+body .contents .row {
+  width: 100%;
+  text-align: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  overflow: auto;
+}
+body .contents .row .card {
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+}
+body .contents .row .card img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease;
+}
+body .contents .row .card img:hover {
+  transform: scale(1.1);
+}
+body .contents .row .card:hover {
+  border: solid 2px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.overlay .modal {
+  margin: 0 auto;
+  position: absolute;
+  width: 60%;
+  height: 80%;
+  padding: 2rem;
+  background-color: #212529;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 0 0 8px gray;
+}
+.overlay .modal .modal-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.overlay .modal .modal-inner img {
+  width: 100%;
+}
+.overlay .modal .modal-inner .btn {
+  padding: 0.5rem;
+  background-color: #D9D9D9;
+  color: #212529;
+  cursor: pointer;
+}
+.overlay .modal .modal-inner .btn:hover {
+  background-color: #A6A6A6;
+}
+
+.light .card:hover {
+  border-color: black;
+}
+.light .modal {
+  color: #fff;
+}
+
+.dark .card:hover {
+  border-color: white;
+}
+
+#movie .row {
+  flex-wrap: wrap;
+  row-gap: 1em;
+}
+
+#tv .row {
+  flex-wrap: wrap;
+  row-gap: 1em;
+}
+
+#results .row {
+  flex-wrap: wrap;
+  row-gap: 1em;
+}/*# sourceMappingURL=style.css.map */
